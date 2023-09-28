@@ -1,0 +1,4 @@
+# Crontab for running pgbadger within the
+# Learn PostgreSQL container
+#
+*/5 * * * *  /usr/bin/pgbadger -I -f stderr -O /data/html /postgres/16/data/log/*.log
